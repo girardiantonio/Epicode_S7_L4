@@ -134,5 +134,12 @@ const dog = function () {
     })
 }
 
-catButton.addEventListener("click", cat)
-dogButton.addEventListener("click", dog)
+catButton.addEventListener("click", function () {
+  container.innerHTML = ""
+  cat()
+})
+
+dogButton.addEventListener("click", function () {
+  container.innerHTML = ""
+  dog()
+})
